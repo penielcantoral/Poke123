@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="P">
+<head>
+	<script src="lib/jquery.js"></script>
+	<meta charset="utf-8">
+	<title>Pokemon GT</title>
+	<link rel="stylesheet" href="lib/boo/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/icon.png"/>
+</head>
+<body  class="cuerpo" ng-controller="Pokemon">
+
+	<header>
+		<nav>
+			<ul>
+				<!--<li><img src="https://fontmeme.com/images/Pokemon-Logo.jpg"></li>-->
+				<li><a href="">Long it</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+ 	<div class="container">
+ 		<div class="row ">
+ 			<div class="col-md-3" ng-repeat="y in ListadoPokemon">
+				<div class="cuadro">
+		
+					<img src="{{y.data.sprites.front_default}}">
+					<div class="na">
+					<span>{{y.data.name}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="lib/angular.js"></script>
+	<script src="lib/boo/js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
